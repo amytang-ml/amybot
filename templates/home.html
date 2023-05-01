@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Techmenu Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <style>
+        /* Add some styling to the page title */
+        h1 {
+            font-size: 36px;
+            color: #006699;
+            text-align: center;
+            text-shadow: 2px 2px #cccccc;
+        }
+        /* Add some styling to the introduction paragraph */
+        p.intro {
+            font-size: 16px;
+            color: #333333;
+            text-align: center;
+        }
+        /* Add some styling to the example questions */
+        p.examples {
+            font-size: 16px;
+            color: #006699;
+            text-align: center;
+            font-style: italic;
+        }
+        /* Add some styling to the warning message */
+        p.warning {
+            font-size: 16px;
+            color: #ff0000;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* Add some styling to the chatbox */
+        #chatbox {
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+            height: 400px;
+            overflow-y: scroll;
+        }
+        /* Add some styling to the user input form */
+        #user-input {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #user-input label {
+            font-size: 18px;
+            color: #006699;
+            font-weight: bold;
+        }
+        #user-input input[type="text"] {
+            font-size: 16px;
+            color: #333333;
+            border: none;
+            border-bottom: 2px solid #006699;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        #user-input input[type="text"]:focus {
+            outline: none;
+            border-bottom: 2px solid #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wiki Chatbot</h1>
+        <p class="intro">Hi, I am Wiki Chatbot. As ChatGPT does not have access to current news or events beyond its knowledge cutoff of September 2021, I am here to help.</p>
+        <p class="intro">The information after September 2021 was trained with OpenAI LLM with Llama_Index library.</p>
+        <p class="examples">For example, you can ask me questions like:</p>
+        <ul class="examples">
+            <li>Why was Mr Trump indicted?</li>
+            <li>Who is Stormy Daniels?</li>
+            <li>Tell me the scandal between Trump and Stormy Daniels.</li>
+        </ul>
+        <p class="warning"><b>Be aware, I am using a free tier API key which is heavily rate-limited by OpenAI so the response may take 30 - 60 seconds, please be patient.</b></p>
+    
+        <div id="chatbox"></div>
+        <form id="user-input">
+            <label for="name">You: </label>
+            <input type="text" name="user_message"><br><br>
+            <button type="button" id="copy-button">Copy</button>
+        </form>
+    </div>
+    <script src="static/chatbot.js"></script>
+</body>
+</html>
+

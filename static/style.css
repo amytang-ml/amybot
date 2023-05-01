@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.chatbox {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.message {
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-message {
+  font-size: 1.5em;
+  background-color: #eee;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.bot-message {
+  font-weight: bold;
+  background-color: #e0e0e0;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.form {
+  width: 500px;
+  height: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#user-input {
+  position: relative;
+}
+#copy-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
